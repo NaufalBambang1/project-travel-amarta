@@ -1,0 +1,275 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    text-decoration: none !important;
+}
+/* Layout */
+.container-dqa{
+  max-width: 960px;
+  margin: 0px auto;
+
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+.transition-06s{
+  transition: 0.6s;
+}
+@media (max-width: 970px) {
+  .img-fluid{
+    max-width: 100%;
+    height: auto;    
+  }
+}
+@media (min-width: 1280px){
+  .container-dqa{
+    min-width: 1280px;
+  }
+}
+.grid-box-2 {
+  row-gap: 10px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(1,minmax(0,1fr));
+}
+.grid-box-3 {
+  row-gap: 10px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.grid-box-4 {
+  row-gap: 10px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+@media (min-width: 840px) {
+  .grid-box-2 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  .grid-box-3 {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+  .grid-box-4 {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+  }
+}
+
+/*  */
+
+/* Text-Color & Bg-Color */
+.bg-color-maincolor{
+  background-color: #f5a601 !important;
+}
+.bg-main-image{
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+}
+.bg-navy-blue{
+  background-color: #102d4b !important;
+}
+.text--white{
+  color:#fff !important;
+}
+
+/*  */
+
+/* Border */
+.border-2px-white{
+  border: 2px solid white;
+}
+.br-5px{
+  border-radius: 5px;
+}
+.br-8px{
+  border-radius: 8px;
+}
+.br-10px{
+  border-radius: 10px;
+}
+.br-15px{
+  border-radius: 15px;
+}
+/*  */
+
+/* Font size, weight */
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+.fs-11{
+    font-size: 11px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+.fs-19 {
+    font-size: 19px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-21 {
+    font-size: 21px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-23 {
+    font-size: 23px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-26 {
+    font-size: 26px;
+}
+.fs-30{
+  font-size: 30px;
+}
+.fs-48{
+  font-size: 48px;
+}
+
+/*  */
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.text-align-center{
+  text-align: center;
+}
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-center{
+  align-items: center;
+}
+.hide-on-mobile {
+  display: block;
+}
+.show-on-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+  .container-dqa{
+    max-width: 670px;
+  }
+}
+
+/* Navbar */
+.navbar-dqa{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.6s;
+}
+.sticky-navbar{
+  background-color: #fff !important;
+}
+.sticky-navbar a{
+  color: #41444B !important;
+} 
+.sticky-navbar .border-2px-white{
+  border-color: #41444B ;
+}
+.sticky-navbar .border-2px-white i{
+  color: #41444B !important;
+}
+
+/* swiper */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
